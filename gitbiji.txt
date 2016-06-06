@@ -10,4 +10,12 @@ Git 提供了一个叫做 git config 的工具，专门用来配置或读取相�
 当前项目的 git 目录中的配置文件（也就是工作目录中的 .git/config 文件）
 注意：　每一个级别的配置都会覆盖上层的相同配置，所以 .git/config 里的配置会覆盖/etc/gitconfig 中的同名变量。
 查看当前的配置 git config -- list
-
+代理服务器使用方法
+假设在windows下使用，需要首先安装msysGit，完成后右键菜单进入Git Bash，在弹出的命令行设置代理服务器：
+$ declare -x HTTPS_PROXY="username:password@server:port"
+username和password设置为代理服务器要求的用户名和密码，server和port设置为代理服务器的名称和端口，示例如下：
+$ declare -x HTTPS_PROXY="solos:z07042@proxy.solos.cn:8080"
+如果代理不需要身份验证直接用以下方式：
+$ declare -x HTTPS_PROXY="server:port"
+2
+测试：

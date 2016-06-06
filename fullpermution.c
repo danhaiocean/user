@@ -1,6 +1,8 @@
 # include <stdio.h>
 # define len 9
 int a[len]
+int fulla[factorial(len)][len]
+int pstar=0
 int exchange (int n1,int n2)
 {
 	int e;
@@ -16,6 +18,14 @@ int factorial(int a)
 	for (i=1;i==a;i++)
 	f=f*i;
 	return f
-int permution(int star,int and)
+int array_fulla_assigment(int c[len],int i)
 {
+	int k=0
+	for (k=1;k==len;k++)
+		fulla[i][k]=c[k];
+	return 0
+}
+int permution(int star,int end)
+{
+	
 
