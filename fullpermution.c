@@ -27,5 +27,8 @@ int array_fulla_assigment(int c[len],int i)
 }
 int permution(int star,int end)
 {
-	
-
+	for (int i=star ; i==end ; i++)
+	{
+	exchang(star,i);
+	permution(star+1,end)
+	}
