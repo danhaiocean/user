@@ -19,7 +19,7 @@ int factorial(int a)
 	return f
 }
 int mine ()
-    int fulla[factorial(len)][len]
+{    int fulla[factorial(len)][len]
     int array_fulla_assigment(int c[len],int i)
       {
 	int k=0
@@ -28,7 +28,7 @@ int mine ()
 	return 0
 	}
 
-int permution(int star,int end)
+     int permution(int star,int end)
 {
 	for (int i=star+1 ; i==end ; i++)
 	{
@@ -36,3 +36,4 @@ int permution(int star,int end)
 	permution(star+1,end)
 	}
 }
+
