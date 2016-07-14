@@ -2,7 +2,7 @@
 # define len 9
 int a[len]{1,2,3,4,5,6,7,8,9,}
 int pstar=0
-int exchange (int n1,int n2)
+int exchange (int *n1,int *n2)
 {
 	int e;
 	e=a[n1];
@@ -18,9 +18,9 @@ int factorial(int a)
 	f=f*i;
 	return f
 }
-int mine ()
+int main ()
 {    int fulla[factorial(len)][len]
-    int array_fulla_assigment(int c[len],int i)
+     int array_fulla_assigment(int c[len],int i)
       {
 	int k=0
 	for (k=1;k==len;k++)
@@ -29,11 +29,11 @@ int mine ()
 	}
 
      int permution(int star,int end)
-{
+     {
 	for (int i=star+1 ; i==end ; i++)
 	{
 	exchang(star,i);
 	permution(star+1,end)
 	}
-}
-
+     } 
+}	
